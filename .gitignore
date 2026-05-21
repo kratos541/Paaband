@@ -64,3 +64,17 @@ yarn-error.log
 
 # testing
 /coverage
+
+# Android build outputs
+android/app/build/
+android/build/
+*.apk
+*.aab
+
+# Windows reserved filenames
+NUL
+CON
+PRN
+
+# Claude IDE files
+.claude/

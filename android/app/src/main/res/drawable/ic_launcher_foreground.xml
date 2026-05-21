@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Modern bold "P" — white, perfectly centred in 108×108dp safe zone.
+
+  Geometry (centred at 54,54):
+    Stem  : x 28–44, y 20–88   (16 wide, 68 tall)
+    Bowl outer : x 28–82, y 20–58  right edge is a smooth arc
+    Bowl inner cutout : x 44–66, y 32–46  (removes the filled bump)
+
+  Horizontal centre: (28+82)/2 = 55 ≈ 54  ✓
+  Vertical centre  : (20+88)/2 = 54        ✓
+-->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+  <!--
+    Outer P body (white fill).
+    Uses evenOdd so the inner cutout becomes transparent.
+  -->
+  <path
+      android:fillColor="#FFFFFF"
+      android:fillType="evenOdd"
+      android:pathData="
+        M28,20
+        L44,20
+        L65,20
+        C82,20 82,20 82,39
+        C82,58 65,58 44,58
+        L44,88
+        L28,88
+        Z
+        M44,33
+        L63,33
+        C70,33 70,33 70,39
+        C70,45 63,45 44,45
+        Z
+      "/>
+
+</vector>
